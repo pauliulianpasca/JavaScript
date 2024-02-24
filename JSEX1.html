@@ -1,0 +1,79 @@
+<script>
+
+a = 5
+b = 10
+c = 6
+
+if(a > b && b > c){
+    console.log("se indeplineste conditia");
+}
+else if(b > a && b > c){
+    console.log("nu indeplineste conditia");
+}
+
+console.log("\n");
+
+masini=["bmw", "dacia", "mercedes", "lancia"];
+
+for(i=0; i<masini.length; i++){;
+    console.log("Masina cu numarul " + (i+1) + " este " + masini[i]);
+}
+
+console.log("\n");
+
+inmultire = (a,b) => {
+    console.log("Produsul numerelor a si b este " + a * b);
+}
+
+inmultire(5,6);
+
+console.log("\n");
+
+salutPersoana = (nume, sex) => {
+
+    if(sex === "masculin"){
+        console.log("Salut Domnule " + nume);
+    }
+    else if(sex === "feminin"){
+        console.log("Salut Domna " + nume);
+    }
+    else{
+       console.log("Sexul nu este specificat corect.");
+    }
+
+}
+
+salutPersoana("Paul");
+salutPersoana("Radu", "masculin");
+salutPersoana("Maria", "feminin")
+
+console.log("\n");
+
+sirNumere = (x) => {
+
+    sirInversat = x.slice().reverse()
+
+    for(i=0; i<x.length; i++){
+        console.log("Ordine crescatoare " + x[i]);
+    } 
+        console.log("\n")
+
+    for(i=0; i<x.length; i++){
+        console.log("Ordine descrescatoare " + sirInversat[i]);
+    }
+
+    
+} 
+
+sirNumere([1, 2, 3, 4, 5]);
+
+console.log("\n");
+
+inmultire = (a,b) => a * b;
+rezultat = inmultire(3, 4);
+console.log(rezultat);
+
+console.log("\n");
+
+
+</script>

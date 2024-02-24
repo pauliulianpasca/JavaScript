@@ -1,0 +1,64 @@
+<script>
+
+const invertArray = (arr) => {
+let invertedArray = arr.map(invertarr => -invertarr);
+  console.log(invertedArray);
+}
+invertArray([1, 2 ,3 ,4 ,5]);
+
+console.log("\n");
+
+
+const makesTen = (a, b) => {
+ 
+  if (a == 10 || b == 10 || a + b == 10) {
+
+    console.log(true);
+  } else {
+ 
+    console.log(false);
+  }
+}
+
+makesTen(9, 10); // true
+makesTen(9, 9); // false
+makesTen(1, 9); // true
+
+
+console.log("\n");
+
+ const minmax = (findminmax) => {
+
+    let min = findminmax[0];
+    let max = findminmax[0];
+
+    for (let i = 0; i < findminmax.length; i++) {
+        if (findminmax[i] < min) {
+            min = findminmax[i];
+        }
+        if (findminmax[i] > max) {
+            max = findminmax[i];
+        }
+    }
+
+    console.log("Min number is: " + min);
+    console.log("Max number is: " + max);
+  
+}
+
+minmax([1, 2, 3, 4, 5]);
+
+
+console.log("\n");
+
+ const volumeOfBox = ({ width, length, height }) => {
+
+   let volume = width * length * height;
+    console.log("Volume of the box is: " + volume);
+}
+
+volumeOfBox({ width: 2, length: 5, height: 1 });
+volumeOfBox({ width: 4, length: 2, height: 2 });
+volumeOfBox({ width: 2, length: 3, height: 5 });
+
+</script>

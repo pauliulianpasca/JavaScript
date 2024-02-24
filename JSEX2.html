@@ -1,0 +1,73 @@
+<script>
+
+let nume = "Pasca";
+let prenume = "Paul";
+let prenumeSecundar = " Iulian";
+let varsta =  29;
+let hobby = ["Photography" , "Traveling" , "Swiming"];
+let aiFacutArmata = false
+let maritalStatus = "Single";
+let aiFacutFacultatea = true;
+let facultateStudiata = "Univeritatea Maritima Constanta";
+
+prenume = prenume + prenumeSecundar
+
+console.log("Nume: " + nume);
+console.log("Prenume: " + prenume);
+console.log("Varsta: " + varsta);
+console.log("Pasiunea Preferata: " + hobby[1]);
+console.log("Stare Civila: " + maritalStatus);
+
+if (aiFacutArmata === false) {
+    console.log("Armata: " + "Nu");
+if (aiFacutArmata === true)
+    console.log("Armata: " + "Da");
+
+if (aiFacutFacultatea === false) 
+    console.log("Facultate: " + "Nu");
+if (aiFacutFacultatea === true)
+    console.log("Facultate: " + "Da");
+
+if (aiFacutFacultatea === true)
+    console.log("Facultatea Studiata: " + facultateStudiata);
+}
+
+console.log("\n");
+
+let salariuDecembrie = 2000;
+let salariuIanuarie = 2500;
+
+sumaSalariu = salariuDecembrie + salariuIanuarie;
+produsulSalariu= salariuDecembrie * salariuIanuarie;
+
+console.log("Suma Salariu: " + sumaSalariu);
+console.log("Produs Salariu: " + produsulSalariu);
+
+console.log("\n");
+
+let dog={
+    name:  "Luna",
+    breed: "husky",
+    years: 5,
+    color: "Black and White",
+    names: ["Aurora" , "Sasha" , "Mishka", "Freya"],
+    sex: "female",
+    pedigree: 1,
+}
+
+console.log("Name: " + dog.name);
+console.log("Breed " + dog.breed);
+console.log("Age: " + dog.years);
+console.log("Coat color: " + dog.color);
+console.log("Possible Name: " + dog.names[3]);
+console.log("Sex: " + dog.sex);
+
+if (dog.pedigree === 1) {
+    console.log("Pedigree: " + "Nu");
+if (dog.pedigree === 0)
+    console.log("Pedigre " + "Da");
+}
+
+
+
+</script>

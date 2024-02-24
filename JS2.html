@@ -1,0 +1,140 @@
+<script>
+
+let nume = "Paul"; // tip de date : string
+let varsta = 30; // tip de date : numeric
+let aiFacutFacultatea = true; // tip de date boolean sau true/false
+let aiFacutArmata = 1; // tip de date : boolean sau 1- true si 0-false
+
+const numeC = "Pasca";
+const varstaC = 29;
+const aiFacutArmataC = 0;
+
+varsta = varstaC / 4;  // operatii de baza - + * %
+
+console.log(varsta);
+
+
+
+nume = nume + " Pasca";
+
+console.log(nume);  //Concatenare
+
+
+
+aiFacutArmata = !aiFacutArmata;    // ! - negare
+
+console.log(aiFacutArmata);
+
+
+
+let masini = ["Dacia" , "Audi" , "Bmw" , 2012];   // tip de date: array sau vector
+let votPresedinte = [206, 2010, 2014];
+let votare = [true, false, 0];
+
+console.log(masini);
+console.log(masini[3]);
+
+
+let masina = {
+    brand: "audi",
+    model: "A4",
+    anFabricatie: 2014,
+    inmatriculat: true,
+    extraoptiuni: ["aer conditionat" , "servo directie" , "geamuri electrice"],
+    nrInmatricula: "847ABC",
+    garaj: {
+        suprafata: 20,
+        stradaGaraj: "Ion Creanga",
+        ocupat: false
+    },
+    salut: function(){
+        console.log("Salut sunt masina ta");
+    }
+}
+
+masina.salut();
+
+console.log(masina);
+console.log(masina.model);
+console.log(masina.extraoptiuni[2]);
+console.log(masina.garaj.stradaGaraj);
+
+
+
+
+
+a = 3;
+b = 2;
+c = 5;
+
+if(a < b){
+    console.log("IF1");
+}
+else if(c < b){
+    console.log("IF2");
+}
+else{
+    console.log("Else");    
+}
+
+animale = ["pisica", "leu", "caprioara"];
+
+for(i=0;i<3;i++){
+    console.log("Animal: " + animale[i]);
+
+    //console.log("Animal: " + animale[0]);
+    //console.log("Animal: " + animale[1]);
+    //console.log("Animal: " + animale[2]);
+}
+
+function impartire(a,b){
+    console.log("Impartirea e = " + a / b);
+}
+
+impartire(8,5);
+
+
+function datePersonale(nume, varsta, angajat){
+    let a;
+
+    if(angajat === true){
+        a = "angajat";
+
+    }
+    else{
+        a = "somer";
+
+    }
+
+    console.log(nume + " are varsta de " + varsta + " de ani si este " + a);
+}
+
+datePersonale("Paul", 30, true);
+datePersonale("Vlad", 39, false);
+
+
+
+function afisareMasini(x){
+    for(i=0; i<x.length; i++){
+        console.log(x[i]);
+    }
+}
+
+afisareMasini(["BMW", "Audi", "Seat"])
+afisareMasini(["BMW", "Audi", "Seat", "Dacia"])
+
+//ES5
+function adunare(a,b){
+    console.log(a+b)
+ }
+
+ //ES6
+ adunare = (a,b) => {
+    console.log(a+b)
+ }
+
+inmultire = (x,y) => {
+    console.log(x/Y);
+}
+
+</script>
